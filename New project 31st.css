@@ -1,0 +1,46 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+
+.yt{
+  background-color: #000000;
+}
+
+.img1{
+  
+  width: auto;
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.txt{
+  padding: 75px 50px;
+  background-color: #000000
+  
+}
+
+div p{
+font-family: 'ZCOOL QingKe HuangYou', cursive;
+color: #fff;
+font-size: 20px;
+word-spacing: 3px;
+}
+
+div h1{
+font-family: 'Oswald', sans-serif;
+color:antiquewhite;
+letter-spacing: 1px;
+}
+
+.txt center{
+  color: #fff;
+}
+.footer {
+   width: 100%;
+   background-color:#000000;
+   color: white;
+   text-align: center;
+}
