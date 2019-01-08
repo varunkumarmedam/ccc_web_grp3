@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2019 by kantheti-Moniprasad (http://jsbin.com/rajugu/8/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  <style id="jsbin-css">
+body{
+  margin: 0;
+  padding: 0;
+}
+.ion{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header{
+  background-color: rgba(29, 162, 196, 0.5);
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+}
+h1{
+  color: rgba(41, 20, 131, 0.5);
+}
+nav{
+  position: absolute;
+  width: 100%;
+  transform: scale(1,0);
+  transform-origin: top;
+  transition: transform 400ms linear;
+  text-align: left;
+}
+.label-nav{
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 10px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  transform: rotate(90deg);
+  color: #fff;
+  
+}
+
+nav ul li a{
+  color:black;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+.nav-toggle{
+  display: none;
+}
+.nav-toggle:checked ~ nav {
+  transform: scale(1,1);
+  
+}
+.list-group-item {
+  background-color: rgba(13, 204, 156, 0.5);
+
+}
+.nav-toggle:checked ~ nav  a {
+  opacity: 1;
+  transition: opacity 500ms ease-in-out 150ms;
+  
+}
+
+
+
+</style>
+</head>
+  <body>
+
+    <header>
+      <h1>I'm Batman</h1>
+      <input type="checkbox" id="nav-toggler" class="nav-toggle">
+
+      
+        <nav>
+          <ul class="list-group">
+            <li class="list-group-item"><a href="#">home</a></li>
+            <li class="list-group-item"><a href="#">Main-page</a></li>
+            <li class="list-group-item"><a href="#">Contact</a></li>
+            <li class="list-group-item"><a href="#">About</a></li>
+          </ul>
+        </nav>
+      
+      <label for="nav-toggler" class="label-nav">
+        <span>|||</span>
+      </label>
+
+
+    </header>
+
+
+    <div>
+      <img src="https://i.ibb.co/bgpHQDW/abstract-red-wallpaper-1920x1080.jpg" class="ion">
+    </div>
+
+  </body>
+</html>
